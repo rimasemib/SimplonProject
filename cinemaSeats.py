@@ -3,8 +3,6 @@ Booked_seat = 0
 Row = 8
 Seats = 9
 Total_seat = Row * Seats
-Booked_ticket_Person = [[None for j in range(Seats)] for i in range(Row)]
-
 
 class chart:
 
