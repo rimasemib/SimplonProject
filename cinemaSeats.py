@@ -15,15 +15,13 @@ class chart:
             seats_chart[str(i)] = seats_in_row
         return seats_chart
 
-
-
 class_call = chart
 table_of_chart = class_call.chart_maker()
 
 while x != 0:
     print('1 for Show the seats')
     print('2 for Buy a Ticket')
-    print('0 for Exit')
+
     x = int(input('Select Option - '))
     if x == 1:
         for seat in range(Seats):
@@ -49,10 +47,15 @@ while x != 0:
             table_of_chart[str(Row_number - 1)][str(Column_number)] = 'B'
             Booked_seat += 1
 
-        else:
+        elif conform == 'no':
 
             print('This seat already booked by some one')
-    else:
-
+        else:
             print('***  Invalid Input  ***')
-            print()
+    else:
+        print('***  Invalid Input  ***')
+        print()
+
+
+
+
